@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="../../assets/logo/logo40px.png" type="image/png">
+  <title>Inspirasi Alumni - SMAN 1 Singaraja</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../komponen/navbar/navbar.css?v=translate-2">
+  <script src="../../komponen/shared/img-fallback.js"></script>
+  <link rel="stylesheet" href="../../css/home.css">
+  <link rel="stylesheet" href="../../komponen/alumni/alumni.css?v=1">
+</head>
+<body data-page="inspirasi">
+<nav class="navbar">
+  <a class="navbar__brand" href="../../index.html">
+    <span class="navbar__logo"><img src="../../assets/logo/logo100px.webp" alt="Logo Smansa" width="48" height="48" decoding="async"></span>
+    <span class="navbar__brand-text"><span class="line-1">SMA NEGERI 1</span><span class="line-2">SINGARAJA</span></span>
+  </a>
+  <ul class="navbar__links">
+    <li><a href="../../index.html">Beranda</a></li>
+    <li class="dropdown">
+      <a href="#" class="dropbtn">Tentang Kami</a>
+      <ul class="dropdown-content">
+        <li><a href="../tentang-kami/profil-sekolah.html">Profil Sekolah</a></li>
+        <li><a href="../tentang-kami/komponen.html">Komponen Sekolah</a></li>
+        <li><a href="../tentang-kami/fasilitas.html">Fasilitas</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropbtn">Program</a>
+      <ul class="dropdown-content">
+        <li><a href="../program/akademik.html">Kesiswaan</a></li>
+        <li><a href="../program/ekstrakurikuler.html">Ekstrakurikuler</a></li>
+        <li><a href="../program/scs.html">SCS</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropbtn">Informasi</a>
+      <ul class="dropdown-content">
+        <li><a href="../informasi/pengumuman.html">Pengumuman</a></li>
+        <li><a href="../informasi/berita.html">Berita</a></li>
+        <li><a href="../informasi/prestasi.html">Prestasi</a></li>
+        <li><a href="../informasi/karier.html">Karier</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropbtn">Alumni</a>
+      <ul class="dropdown-content">
+        <li><a href="../alumni/ikatan.html">Ikatan</a></li>
+        <li><a href="../alumni/inspirasi.html">Inspirasi</a></li>
+      </ul>
+    </li>
+    <li><a href="../kontak/kontak.html">Kontak</a></li>
+  </ul>
+  <div class="navbar__actions">
+    <div class="language-switch" aria-label="Pilih bahasa">
+      <span class="language-option is-current" aria-current="page">ID</span>
+      <a class="language-option" href="../../en/pages/alumni/inspirasi.html">EN</a>
+    </div>
+    <a class="navbar__cta" href="../spmb/spmb.html">SPMB</a>
+  </div>
+</nav>
+
+<main class="in">
+
+
+  <!-- DIREKTORI -->
+  <section class="in-wrap in-dir" id="direktori">
+    <h2 class="in-title">Inspirasi Alumni Smansa</h2>
+    <p class="in-lead">Jejak langkah membanggakan dari lulusan SMAN 1 Singaraja yang telah berkiprah di berbagai bidang.</p>
+
+    <div class="in-tools">
+      <label class="in-search"><span class="in-sr">Cari alumni</span>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></svg>
+        <input type="search" id="inQ" placeholder="Cari alumni berdasarkan nama atau tahun lulus..." autocomplete="off">
+      </label>
+    </div>
+    <div class="in-chips" id="inChips" role="group" aria-label="Filter bidang"></div>
+    <p class="in-count" id="inCount" aria-live="polite"></p>
+
+    <div class="in-grid" id="inGrid"></div>
+    <p class="in-empty" id="inEmpty" hidden>Belum ada alumni yang cocok. Coba kata kunci atau bidang lain.</p>
+    <div class="in-more"><button type="button" class="in-btn in-btn--line" id="inMore">Muat Lebih Banyak ⌄</button></div>
+  </section>
+
+  <!-- DIALOG PROFIL -->
+  <dialog class="in-dlg" id="inDlg" aria-labelledby="dName">
+    <button type="button" class="in-x" data-close aria-label="Tutup">&times;</button>
+    <div class="in-dlg__top">
+      <div class="in-dlg__ph" id="dPh"></div>
+      <div>
+        <span class="in-tag" id="dMeta"></span>
+        <h2 id="dName"></h2>
+        <p class="in-dlg__role" id="dRole"></p>
+      </div>
+    </div>
+    <h3>Kisah Singkat</h3><p id="dStory"></p>
+    <h3>Pencapaian</h3><ul class="in-ach" id="dAch"></ul>
+    <blockquote id="dMsg"></blockquote>
+    <div class="in-dlg__bar">
+      <button type="button" class="in-btn in-btn--line in-btn--sm" id="dPrev">← Sebelumnya</button>
+      <button type="button" class="in-btn in-btn--line in-btn--sm" id="dShare">Salin Tautan</button>
+      <button type="button" class="in-btn in-btn--line in-btn--sm" id="dNext">Berikutnya →</button>
+    </div>
+  </dialog>
+
+</main>
+
+<!-- FOOTER -->
+<div data-footer-slot="site-footer"></div>
+
+<button id="backToTop" class="back-to-top" aria-label="Kembali ke atas">↑</button>
+
+  <script src="../../js/supabase-data.js"></script>
+  <script src="../../komponen/alumni/inspirasi.js?v=mobile-content-1"></script>
+  <script type="module" src="../../komponen/navbar/navbar.js?v=ai-visual-6"></script>
+  <script type="module" src="../../js/main.js"></script>
+  <script src="../../komponen/footer/footer.js?v=mobile-footer-1"></script>
+</body>
+</html>

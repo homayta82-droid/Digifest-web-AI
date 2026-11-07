@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="assets/logo/logo40px.png" type="image/png">
+  <title>Beranda - SMAN 1 Singaraja</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="komponen/navbar/navbar.css?v=translate-2">
+  <link rel="stylesheet" href="css/home.css?v=mobile-home-4">
+</head>
+<body data-page="beranda">
+<nav class="navbar">
+  <a class="navbar__brand" href="index.html">
+    <span class="navbar__logo">
+      <img src="assets/logo/logo100px.webp" alt="Logo Smansa" width="48" height="48" decoding="async">
+    </span>
+    <span class="navbar__brand-text">
+      <span class="line-1">SMA NEGERI 1</span>
+      <span class="line-2">SINGARAJA</span>
+    </span>
+  </a>
+  <ul class="navbar__links">
+    <li><a href="index.html">Beranda</a></li>
+    <li class="dropdown">
+      <a href="#" class="dropbtn">Tentang Kami</a>
+      <ul class="dropdown-content">
+        <li><a href="pages/tentang-kami/profil-sekolah.html">Profil Sekolah</a></li>
+        <li><a href="pages/tentang-kami/komponen.html">Komponen Sekolah</a></li>
+        <li><a href="pages/tentang-kami/fasilitas.html">Fasilitas</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropbtn">Program</a>
+      <ul class="dropdown-content">
+        <li><a href="pages/program/akademik.html">Kesiswaan</a></li>
+        <li><a href="pages/program/ekstrakurikuler.html">Ekstrakurikuler</a></li>
+        <li><a href="pages/program/scs.html">SCS</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropbtn">Informasi</a>
+      <ul class="dropdown-content">
+        <li><a href="pages/informasi/pengumuman.html">Pengumuman</a></li>
+        <li><a href="pages/informasi/berita.html">Berita</a></li>
+        <li><a href="pages/informasi/prestasi.html">Prestasi</a></li>
+        <li><a href="pages/informasi/karier.html">Karier</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropbtn">Alumni</a>
+      <ul class="dropdown-content">
+        <li><a href="pages/alumni/ikatan.html">Ikatan</a></li>
+        <li><a href="pages/alumni/inspirasi.html">Inspirasi</a></li>
+      </ul>
+    </li>
+    <li><a href="pages/kontak/kontak.html">Kontak</a></li>
+  </ul>
+  <div class="navbar__actions">
+    <div class="language-switch" aria-label="Pilih bahasa">
+      <span class="language-option is-current" aria-current="page">ID</span>
+      <a class="language-option" href="en/index.html">EN</a>
+    </div>
+    <a class="navbar__cta" href="pages/spmb/spmb.html">SPMB</a>
+  </div>
+</nav>
+<main>
+ 
+  <!-- ================= HERO ================= -->
+  <section class="hero" id="beranda">
+    <div class="hero-media">
+      <img src="assets/images/header-home-1600.webp"
+           srcset="assets/images/header-home-640.webp 640w, assets/images/header-home-1600.webp 1600w"
+           sizes="(max-width: 768px) 100vw, 1600px"
+           alt="Lingkungan SMA Negeri 1 Singaraja"
+           class="hero-img"
+           decoding="async"
+           fetchpriority="high"
+           width="1600"
+           height="781">
+      <div class="hero-overlay"></div>
+    </div>
+ 
+    <div class="container hero-content">
+      <h1 class="hero-title">
+        <span class="line-white">SMA NEGERI 1</span>
+        <span class="line-gold">SINGARAJA</span>
+      </h1>
+      <p class="hero-tagline">UNGGUL DALAM MUTU, BERKARAKTER,<br>BERWAWASAN GLOBAL</p>
+    </div>
+ 
+    <div class="container">
+      <div class="stat-card" data-animate="stats">
+        <div class="stat-item">
+          <span class="stat-number" data-count="75" data-suffix="%">0%</span>
+          <span class="stat-label">Kelulusan ke PTN</span>
+        </div>
+        <div class="stat-divider" aria-hidden="true"></div>
+        <div class="stat-item">
+          <span class="stat-number" data-count="500" data-suffix="+">0+</span>
+          <span class="stat-label">Prestasi Diraih</span>
+        </div>
+        <div class="stat-divider" aria-hidden="true"></div>
+        <div class="stat-item">
+          <span class="stat-number" data-count="1200" data-suffix="+">0+</span>
+          <span class="stat-label">Siswa Aktif</span>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- ================= SAMBUTAN KEPALA SEKOLAH ================= -->
+  <section class="sambutan" id="sambutan">
+    <div class="container sambutan-grid">
+      <div class="sambutan-text" data-animate="fade-up">
+        <span class="eyebrow">Sambutan</span>
+        <h2>Kepala Sekolah</h2>
+        <div class="heading-rule" aria-hidden="true"></div>
+        <blockquote class="sambutan-quote">
+          <p>Kami berkomitmen menghadirkan pembelajaran bermutu, membangun karakter, dan memberi ruang bagi setiap siswa untuk berkembang. Bersama guru, keluarga, dan masyarakat, kami menyiapkan lulusan yang mandiri, berintegritas, serta siap menghadapi perubahan.</p>
+        </blockquote>
+      </div>
+ 
+      <div class="sambutan-photo" data-animate="fade-up">
+        <div class="photo-blob" aria-hidden="true"></div>
+        <!-- Ganti gambar di bawah ini dengan foto Kepala Sekolah -->
+        <img src="assets/images/kepala-sekolah.webp" alt="Foto Kepala Sekolah" width="400" height="500" loading="lazy" decoding="async">
+        <div class="photo-nameplate">
+          <span class="nameplate-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="8" r="3"></circle>
+              <path d="M5.5 20a6.5 6.5 0 0 1 13 0"></path>
+            </svg>
+          </span>
+          <div>
+            <strong>Made Sri Astiti, S.Pd., M.Pd.</strong>
+            <span>Kepala Sekolah</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- ================= KEMITRAAN UNIVERSITAS ================= -->
+  <section class="kemitraan">
+    <div class="container">
+      <div class="kemitraan-heading" data-animate="fade-up">
+        <h2 class="kemitraan-title">Kemitraan Universitas Unggulan</h2>
+        <p class="kemitraan-subtitle">Siswa kami melanjutkan studi di institusi pendidikan terbaik di Indonesia</p>
+      </div>
+ 
+      <div id="uni-slider-root"></div>
+    </div>
+  </section>
+ 
+  <!-- ================= JURUSAN AKADEMIK ================= -->
+  <section class="jurusan" id="jurusan">
+    <div class="container">
+      <div class="section-heading" data-animate="fade-up">
+        <span class="badge-pill">Program Studi</span>
+        <h2>Jurusan Akademik</h2>
+      </div>
+ 
+      <div class="jurusan-grid">
+        <article class="jurusan-card" data-animate="fade-up">
+          <span class="jurusan-icon" aria-hidden="true"><svg class="icon-stroke" viewBox="0 0 24 24"><path d="M9 3h6M10 3v6.2l-5.2 8.1A2.4 2.4 0 0 0 6.8 21h10.4a2.4 2.4 0 0 0 2-3.7L14 9.2V3"/><path d="M8 15h8"/></svg></span>
+          <h3>Ilmu Pengetahuan Alam (IPA)</h3>
+          <p>Fokus pada penguasaan konsep sains dan riset, membekali siswa untuk melanjutkan studi ke bidang eksakta. Terbagi menjadi IPA non-fisika, IPA non-biologi, dan IPA murni.
+          </p>
+          <div class="tag-row">
+            <span class="tag">Fisika</span>
+            <span class="tag">Kimia</span>
+            <span class="tag">Biologi</span>
+          </div>
+        </article>
+ 
+        <article class="jurusan-card" data-animate="fade-up">
+          <span class="jurusan-icon" aria-hidden="true"><svg class="icon-stroke" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg></span>
+          <h3>Ilmu Pengetahuan Sosial (IPS)</h3>
+          <p>Membangun pemahaman lintas bidang ekonomi, sejarah, dan tata kelola masyarakat secara kritis.</p>
+          <div class="tag-row">
+            <span class="tag">Ekonomi</span>
+            <span class="tag">Sejarah</span>
+            <span class="tag">Geografi</span>
+            <span class="tag">Sosiologi</span>
+            <span class="tag">Antropologi</span>
+          </div>
+        </article>
+ 
+        <article class="jurusan-card" data-animate="fade-up">
+          <span class="jurusan-icon" aria-hidden="true"><svg class="icon-stroke" viewBox="0 0 24 24"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16H6.5A2.5 2.5 0 0 0 4 21.5z"/><path d="M4 5.5v16M8 7h8M8 11h8"/></svg></span>
+          <h3>Bahasa</h3>
+          <p>Mengembangkan literasi dan komunikasi lintas bahasa.Belajar memahami, menyampaikan, dan menyiratkan informasi dengan berbagai bahasa.</p>
+          <div class="tag-row">
+            <span class="tag">Mandarin</span>
+            <span class="tag">Inggris</span>
+            <span class="tag">Jepang</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- ================= PENGUMUMAN ================= -->
+  <section class="pengumuman">
+    <div class="container">
+      <div class="pengumuman-card" data-animate="fade-up">
+        <h2><svg class="icon-stroke" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 14V9a2 2 0 0 1 2-2h2l10-4v16L8 15H6a2 2 0 0 1-2-1Z"/><path d="m8 15 2 6h4l-3-7M21 8v7"/></svg> Pengumuman</h2>
+        <ul class="pengumuman-list" id="homeAnnouncements" aria-live="polite" aria-busy="true"></ul>
+        <a href="pages/informasi/pengumuman.html" class="btn btn-outline-light">Semua Pengumuman</a>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- ================= BERITA TERKINI ================= -->
+  <section class="berita" id="berita">
+    <div class="container">
+      <div class="section-heading row" data-animate="fade-up">
+        <h2><svg class="icon-stroke" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16v16H4zM8 8h8M8 12h8M8 16h4"/><path d="M4 7H2v13a2 2 0 0 0 2 2h14"/></svg> Berita Terkini</h2>
+        <a href="pages/informasi/berita.html" class="link-arrow">Lihat Semua →</a>
+      </div>
+ 
+      <div class="berita-grid" id="homeNews" aria-live="polite" aria-busy="true"></div>
+    </div>
+  </section>
+ 
+  <!-- ================= PRESTASI TERBARU ================= -->
+  <section class="prestasi" id="prestasi">
+    <div class="container">
+      <div class="section-heading row" data-animate="fade-up">
+        <h2><svg class="icon-stroke" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0z"/><path d="M7 6H4v2a4 4 0 0 0 4 4M17 6h3v2a4 4 0 0 1-4 4"/></svg> Prestasi Terbaru</h2>
+        <a href="pages/informasi/prestasi.html" class="link-arrow">Galeri Prestasi →</a>
+      </div>
+ 
+      <div class="prestasi-grid" id="homeAchievements" aria-live="polite" aria-busy="true"></div>
+    </div>
+  </section>
+ 
+</main>
+ 
+<!-- ================= FOOTER ================= -->
+<div data-footer-slot="site-footer"></div>
+ 
+<button id="backToTop" class="back-to-top" aria-label="Kembali ke atas">↑</button>
+
+ 
+    <script defer src="komponen/footer/footer.js?v=mobile-footer-1"></script>
+  <script defer src="js/supabase-data.js"></script>
+  <script type="module" src="komponen/navbar/navbar.js?v=ai-visual-6"></script>
+  <script type="module" src="js/main.js?v=home-updates-2"></script>
+</body>
+</html>

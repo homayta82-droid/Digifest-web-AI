@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="../../assets/logo/logo40px.png" type="image/png">
+  <title>Ekstrakurikuler - SMAN 1 Singaraja</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../komponen/navbar/navbar.css?v=translate-2">
+  <script src="../../komponen/shared/img-fallback.js"></script>
+  <link rel="stylesheet" href="../../css/home.css">
+  <link rel="stylesheet" href="../../komponen/program/program.css?v=2">
+</head>
+<body data-page="ekstrakurikuler">
+<nav class="navbar">
+  <a class="navbar__brand" href="../../index.html">
+    <span class="navbar__logo"><img src="../../assets/logo/logo100px.webp" alt="Logo Smansa" width="48" height="48" decoding="async"></span>
+    <span class="navbar__brand-text"><span class="line-1">SMA NEGERI 1</span><span class="line-2">SINGARAJA</span></span>
+  </a>
+  <ul class="navbar__links">
+    <li><a href="../../index.html">Beranda</a></li>
+    <li class="dropdown">
+      <a href="#" class="dropbtn">Tentang Kami</a>
+      <ul class="dropdown-content">
+        <li><a href="../tentang-kami/profil-sekolah.html">Profil Sekolah</a></li>
+        <li><a href="../tentang-kami/komponen.html">Komponen Sekolah</a></li>
+        <li><a href="../tentang-kami/fasilitas.html">Fasilitas</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropbtn">Program</a>
+      <ul class="dropdown-content">
+        <li><a href="akademik.html">Kesiswaan</a></li>
+        <li><a href="ekstrakurikuler.html">Ekstrakurikuler</a></li>
+        <li><a href="scs.html">SCS</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropbtn">Informasi</a>
+      <ul class="dropdown-content">
+        <li><a href="../informasi/pengumuman.html">Pengumuman</a></li>
+        <li><a href="../informasi/berita.html">Berita</a></li>
+        <li><a href="../informasi/prestasi.html">Prestasi</a></li>
+        <li><a href="../informasi/karier.html">Karier</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropbtn">Alumni</a>
+      <ul class="dropdown-content">
+        <li><a href="../alumni/ikatan.html">Ikatan</a></li>
+        <li><a href="../alumni/inspirasi.html">Inspirasi</a></li>
+      </ul>
+    </li>
+    <li><a href="../kontak/kontak.html">Kontak</a></li>
+  </ul>
+  <div class="navbar__actions">
+    <div class="language-switch" aria-label="Pilih bahasa">
+      <span class="language-option is-current" aria-current="page">ID</span>
+      <a class="language-option" href="../../en/pages/program/ekstrakurikuler.html">EN</a>
+    </div>
+    <a class="navbar__cta" href="../spmb/spmb.html">SPMB</a>
+  </div>
+</nav>
+
+<main class="ek">
+  <section class="ek-wrap ek-intro">
+    <h1 class="ek-title"><span class="ek-dots" aria-hidden="true">•••</span> Ekstrakurikuler <span class="ek-dots" aria-hidden="true">•••</span></h1>
+    <p>Temukan kegiatan ekstrakurikuler yang sesuai dengan minat dan bakatmu.</p>
+  </section>
+
+  <div id="ekList" class="ek-wrap" aria-live="polite" aria-busy="true"></div>
+
+  <dialog id="ekDialog" class="ek-dialog" aria-labelledby="ekDlgTitle">
+    <button type="button" class="ek-close" id="ekClose" aria-label="Tutup">&times;</button>
+    <div class="ek-dialog__img" id="ekDlgImg"></div>
+    <div class="ek-dialog__body">
+      <span class="ek-badge" id="ekDlgCat"></span>
+      <h2 id="ekDlgTitle"></h2>
+      <p id="ekDlgDesc"></p>
+    </div>
+  </dialog>
+</main>
+
+<!-- FOOTER -->
+<div data-footer-slot="site-footer"></div>
+
+<button id="backToTop" class="back-to-top" aria-label="Kembali ke atas">↑</button>
+
+  <script src="../../js/supabase-data.js?v=2"></script>
+  <script src="../../komponen/program/ekstrakurikuler.js?v=2"></script>
+  <script type="module" src="../../komponen/navbar/navbar.js?v=ai-visual-6"></script>
+  <script type="module" src="../../js/main.js"></script>
+  <script src="../../komponen/footer/footer.js?v=mobile-footer-1"></script>
+</body>
+</html>

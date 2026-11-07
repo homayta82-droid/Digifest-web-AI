@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pengumuman resmi SMA Negeri 1 Singaraja untuk siswa, orang tua, dan masyarakat.">
+  <link rel="icon" href="../../assets/logo/logo40px.png" type="image/png">
+  <title>Pengumuman - SMA Negeri 1 Singaraja</title>
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../komponen/navbar/navbar.css?v=translate-2">
+  <script src="../../komponen/shared/img-fallback.js"></script>
+  <link rel="stylesheet" href="../../komponen/informasi/informasi.css">
+</head>
+<body data-page="pengumuman">
+<nav class="navbar">
+  <a class="navbar__brand" href="../../index.html"><span class="navbar__logo"><img src="../../assets/logo/logo100px.webp" alt="Logo Smansa" width="48" height="48" decoding="async"></span><span class="navbar__brand-text"><span class="line-1">SMA NEGERI 1</span><span class="line-2">SINGARAJA</span></span></a>
+  <ul class="navbar__links">
+    <li><a href="../../index.html">Beranda</a></li>
+        <li class="dropdown">
+      <a href="#" class="dropbtn">Tentang Kami</a>
+      <ul class="dropdown-content">
+        <li><a href="../../pages/tentang-kami/profil-sekolah.html">Profil Sekolah</a></li>
+        <li><a href="../../pages/tentang-kami/komponen.html">Komponen Sekolah</a></li>
+        <li><a href="../../pages/tentang-kami/fasilitas.html">Fasilitas</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropbtn">Program</a>
+      <ul class="dropdown-content">
+        <li><a href="../../pages/program/akademik.html">Kesiswaan</a></li>
+        <li><a href="../../pages/program/ekstrakurikuler.html">Ekstrakurikuler</a></li>
+        <li><a href="../../pages/program/scs.html"> SCS</a></li>
+      </ul>
+    </li>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropbtn">Informasi</a>
+      <ul class="dropdown-content">
+        <li><a href="../../pages/informasi/pengumuman.html">Pengumuman</a></li>
+        <li><a href="../../pages/informasi/berita.html">Berita</a></li>
+        <li><a href="../../pages/informasi/prestasi.html">Prestasi</a></li>
+        <li><a href="../../pages/informasi/karier.html">Karier</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropbtn">Alumni</a>
+      <ul class="dropdown-content">
+        <li><a href="../../pages/alumni/ikatan.html">Ikatan</a></li>
+        <li><a href="../../pages/alumni/inspirasi.html">Inspirasi</a></li>
+      </ul>
+    </li>
+    <li><a href="../../pages/kontak/kontak.html">Kontak</a></li>
+  </ul>
+  <div class="navbar__actions"><div class="language-switch" aria-label="Pilih bahasa"><span class="language-option is-current">ID</span><a class="language-option" href="../../en/index.html">EN</a></div><a class="navbar__cta" href="../../pages/spmb/spmb.html">SPMB</a></div>
+</nav>
+
+<main>
+  <header class="inf-hero">
+    <div class="inf-hero__bg" aria-hidden="true"><img src="../../assets/images/header-home-1600.webp" srcset="../../assets/images/header-home-640.webp 640w, ../../assets/images/header-home-1600.webp 1600w" sizes="100vw" alt="" width="1600" height="781" decoding="async" fetchpriority="high"></div>
+    <div>
+      <h1 class="inf-hero__title rv" style="--d:1">Pengumuman</h1>
+    </div>
+  </header>
+
+  <section class="inf-section" aria-label="Daftar pengumuman">
+    <div class="inf-container">
+      <div class="inf-toolbar rv">
+        <label class="inf-search">
+          <span class="inf-sr">Cari pengumuman</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+          <input class="inf-input" id="infSearch" type="search" placeholder="Cari pengumuman..." autocomplete="off">
+        </label>
+        <div class="inf-chips" id="infChips" role="group" aria-label="Filter kategori"></div>
+      </div>
+      <p class="inf-count" id="infCount" aria-live="polite"></p>
+      <ul class="inf-list" id="infList"></ul>
+      <div class="inf-more"><button class="inf-btn" id="infMore" type="button">Tampilkan Lebih Banyak</button></div>
+    </div>
+  </section>
+</main>
+
+<div data-footer-slot="site-footer"></div>
+
+<button class="inf-top" id="toTop" type="button" aria-label="Kembali ke atas"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
+
+<script src="../../komponen/navbar/navbar.js?v=ai-visual-6"></script>
+<script src="../../js/supabase-data.js"></script>
+<script src="../../komponen/informasi/informasi.js?v=announcement-content-split-1"></script>
+  <script src="../../komponen/footer/footer.js?v=mobile-footer-1"></script>
+</body>
+</html>

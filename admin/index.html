@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#102b3f">
+  <title>Admin SMANSA</title>
+  <link rel="icon" href="/assets/logo/logo40px.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/admin/admin.css?v=ai-info-1">
+  <script type="module" src="/admin/admin.js?v=ai-info-1"></script>
+</head>
+<body>
+  <main id="admin-login" class="login-screen">
+    <section class="login-aside">
+      <div class="login-brand"><img src="/assets/logo/logo100px.webp" alt=""><span class="login-brand-copy"><strong>SMANSA</strong><span>Portal Pengelola Website</span></span></div>
+      <div class="login-aside-content"><span class="login-eyebrow">Administrasi Sekolah</span><h1>Kelola informasi sekolah dengan aman.</h1></div>
+      <div class="login-aside-footer"><span>SMAN 1 Singaraja</span><span> Internal</span></div>
+    </section>
+    <section class="login-form-wrap">
+      <form class="login-form" id="login-form" aria-labelledby="login-title" aria-describedby="login-intro">
+        <h2 id="login-title">Masuk ke halaman Admin</h2>
+        <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="username" required></div>
+        <div class="field"><label for="password">Password</label><input id="password" name="password" type="password" autocomplete="current-password" required></div>
+        <button class="button button-primary login-submit" type="submit">Masuk</button>
+        <div class="message" id="login-message" role="alert" aria-live="polite"></div>
+      </form>
+    </section>
+  </main>
+  <div id="admin-app" aria-live="polite" hidden></div>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<button id="aiChatButton" class="ai-chat-button" type="button" aria-label="Buka Asisten AI SMANSA" aria-expanded="false">
+  <span class="ai-chat-button__icon" aria-hidden="true">
+    <img src="/assets/button/button-ai.webp" alt="" width="58" height="58">
+  </span>
+  <span class="ai-chat-button__badge" aria-hidden="true">SMANSA AI</span>
+  <span class="sr-only">Buka asisten virtual SMAN 1 Singaraja</span>
+</button>
+
+<aside id="aiGuide" class="ai-guide" role="note" aria-label="Panduan Asisten AI" hidden>
+  <img class="ai-guide__mascot" src="/assets/icon/AI-2.webp" alt="" width="72" height="72">
+  <div class="ai-guide__content">
+    <span class="ai-guide__eyebrow">ASISTEN VIRTUAL SEKOLAH</span>
+    <strong>Coba SMANSA AI</strong>
+    <p>Butuh info SPMB, program, atau kegiatan sekolah? Saya siap membantu.</p>
+    <button class="ai-guide__start" type="button">Mulai chat <span aria-hidden="true">→</span></button>
+  </div>
+  <button id="aiGuideDismiss" class="ai-guide__dismiss" type="button" aria-label="Tutup panduan">×</button>
+</aside>
+
+<aside id="aiChatPanel" class="ai-chat-panel" aria-label="Asisten Virtual SMAN 1 Singaraja" hidden>
+  <header class="ai-chat-header">
+    <div class="ai-chat-title">
+      <img class="ai-chat-avatar" src="/assets/icon/AI.webp" alt="" width="40" height="40">
+      <div>
+        <strong>SMANSA AI</strong>
+        <small><span class="ai-chat-status" aria-hidden="true"></span>Pemandu informasi sekolah</small>
+      </div>
+    </div>
+    <button id="aiChatClose" type="button" class="ai-chat-close" aria-label="Tutup chat">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
+    </button>
+  </header>
+
+  <div id="aiChatMessages" class="ai-chat-messages" aria-live="polite">
+    <div class="ai-message-row ai-message-row--bot">
+      <img class="ai-message-avatar" src="/assets/icon/AI.webp" alt="" width="28" height="28">
+      <div class="ai-message ai-message--bot">
+        <p>Halo! Saya siap membantu Anda mengenal SMANSA. Pilih topik di bawah atau tulis pertanyaan Anda.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="ai-chat-chips" id="aiChatChips" aria-label="Saran pertanyaan cepat">
+    <button type="button" class="ai-chip" data-query="Bagaimana alur dan syarat pendaftaran SPMB?">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"/><path d="M8 7h8M8 11h6"/></svg>
+      SPMB
+    </button>
+    <button type="button" class="ai-chip" data-query="Apa saja program jurusan akademik di SMANSA?">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3 9 5-9 5-9-5 9-5Z"/><path d="m3 12 9 5 9-5M3 16l9 5 9-5"/></svg>
+      Program
+    </button>
+    <button type="button" class="ai-chip" data-query="Apa saja kegiatan ekstrakurikuler yang tersedia?">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v18M3 12h18"/><circle cx="12" cy="12" r="9"/></svg>
+      Ekstrakurikuler
+    </button>
+    <button type="button" class="ai-chip" data-query="Di mana alamat dan kontak resmi sekolah?">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+      Kontak
+    </button>
+  </div>
+
+  <form id="aiChatForm" class="ai-chat-form">
+    <label class="sr-only" for="aiChatInput">Tulis pertanyaan</label>
+    <input id="aiChatInput" type="text" maxlength="500" placeholder="Tanya seputar SMANSA..." autocomplete="off" required>
+    <button type="submit" class="ai-chat-submit" aria-label="Kirim pertanyaan">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M22 2 9.7 14.3M22 2l-7.4 20-4.9-7.7L2 9.7 22 2Z"/>
+      </svg>
+    </button>
+  </form>
+</aside>

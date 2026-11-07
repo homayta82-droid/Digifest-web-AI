@@ -1,0 +1,219 @@
+.site-footer {
+  width: 100%;
+  padding-top: 70px;
+  background: #071433;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.site-footer .container {
+  width: 100%;
+  max-width: 1180px;
+  margin-inline: auto;
+  padding-inline: 24px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 0.8fr 0.8fr 1fr;
+  gap: 40px;
+  padding-bottom: 50px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.footer-logo img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.footer-logo strong {
+  color: #fff;
+  font-size: 0.85rem;
+  line-height: 1.2;
+}
+
+.footer-brand p {
+  max-width: 32ch;
+  margin-bottom: 18px;
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
+
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 0.82rem;
+  list-style: none;
+}
+
+.footer-contact li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer-contact .icon-stroke {
+  width: 16px;
+  height: 16px;
+  flex: none;
+  color: #ffcc00;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.footer-col h4 {
+  margin-bottom: 18px;
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+.footer-col ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  list-style: none;
+}
+
+.footer-col a {
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 0.85rem;
+  transition: color 0.2s ease;
+}
+
+.footer-col a:hover {
+  color: #ffcc00;
+}
+
+.map-embed {
+  min-height: 124px;
+  padding: 18px;
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  gap: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 8px;
+  color: rgba(255, 255, 255, 0.78);
+  text-align: center;
+  text-decoration: none;
+  background: #10254a;
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.map-embed:hover { border-color: #ffcc00; background: #142e59; }
+.map-embed svg { width: 24px; height: 24px; fill: none; stroke: #ffcc00; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.map-embed strong { font-size: 0.78rem; line-height: 1.4; }
+.map-embed span { color: rgba(255, 255, 255, 0.62); font-size: 0.7rem; }
+
+.footer-bottom {
+  padding-block: 20px;
+}
+
+.footer-bottom-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-icons a {
+  display: flex;
+  width: 34px;
+  height: 34px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: 700;
+  transition: background 0.2s ease;
+}
+
+.social-icons img {
+  display: block;
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.social-icons a:hover {
+  background: #ffcc00;
+  color: #0b1e4d;
+}
+
+@media (max-width: 960px) {
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 720px) {
+  .site-footer { padding-top: 44px; }
+
+  .site-footer .container { padding-inline: 16px; }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding-bottom: 32px;
+  }
+
+  .footer-brand p { font-size: .88rem; }
+
+  .footer-contact { gap: 4px; }
+
+  .footer-contact li { align-items: flex-start; }
+
+  .footer-contact a {
+    display: flex;
+    min-height: 44px;
+    align-items: center;
+    overflow-wrap: anywhere;
+  }
+
+  .footer-col h4 { margin-bottom: 8px; }
+
+  .footer-col ul { gap: 2px; }
+
+  .footer-col ul a {
+    display: flex;
+    min-height: 42px;
+    align-items: center;
+  }
+
+  .map-embed { min-height: 112px; }
+
+  .footer-bottom { padding-block: 16px; }
+
+  .footer-bottom-inner {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .social-icons a { width: 44px; height: 44px; }
+}
+
+@media (max-width: 360px) {
+  .site-footer .container { padding-inline: 12px; }
+  .footer-grid { gap: 20px; }
+  .footer-bottom-inner { font-size: .75rem; }
+}

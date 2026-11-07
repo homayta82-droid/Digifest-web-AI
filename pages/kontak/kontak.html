@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Hubungi SMA Negeri 1 Singaraja: kirim pesan, lihat informasi kontak, jam operasional, media sosial, dan lokasi sekolah.">
+  <link rel="icon" href="../../assets/logo/logo40px.png" type="image/png">
+  <title>Kontak - SMAN 1 Singaraja</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../komponen/navbar/navbar.css?v=translate-2">
+  <script src="../../komponen/shared/img-fallback.js"></script>
+  <link rel="stylesheet" href="../../komponen/kontak/kontak.css?v=contact-gradient-4">
+</head>
+<body class="kt-page">
+<nav class="navbar">
+  <a class="navbar__brand" href="../../index.html"><span class="navbar__logo"><img src="../../assets/logo/logo100px.webp" alt="Logo Smansa" width="48" height="48" decoding="async"></span><span class="navbar__brand-text"><span class="line-1">SMA NEGERI 1</span><span class="line-2">SINGARAJA</span></span></a>
+  <ul class="navbar__links">
+    <li><a href="../../index.html">Beranda</a></li>
+        <li class="dropdown">
+      <a href="#" class="dropbtn">Tentang Kami</a>
+      <ul class="dropdown-content">
+        <li><a href="../../pages/tentang-kami/profil-sekolah.html">Profil Sekolah</a></li>
+        <li><a href="../../pages/tentang-kami/komponen.html">Komponen Sekolah</a></li>
+        <li><a href="../../pages/tentang-kami/fasilitas.html">Fasilitas</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropbtn">Program</a>
+      <ul class="dropdown-content">
+        <li><a href="../../pages/program/akademik.html">Kesiswaan</a></li>
+        <li><a href="../../pages/program/ekstrakurikuler.html">Ekstrakurikuler</a></li>
+        <li><a href="../../pages/program/scs.html"> SCS</a></li>
+      </ul>
+    </li>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropbtn">Informasi</a>
+      <ul class="dropdown-content">
+        <li><a href="../../pages/informasi/pengumuman.html">Pengumuman</a></li>
+        <li><a href="../../pages/informasi/berita.html">Berita</a></li>
+        <li><a href="../../pages/informasi/prestasi.html">Prestasi</a></li>
+        <li><a href="../../pages/informasi/karier.html">Karier</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropbtn">Alumni</a>
+      <ul class="dropdown-content">
+        <li><a href="../../pages/alumni/ikatan.html">Ikatan</a></li>
+        <li><a href="../../pages/alumni/inspirasi.html">Inspirasi</a></li>
+      </ul>
+    </li>
+    <li><a href="../../pages/kontak/kontak.html">Kontak</a></li>
+  </ul>
+  <div class="navbar__actions"><div class="language-switch" aria-label="Pilih bahasa"><span class="language-option is-current">ID</span><a class="language-option" href="../../en/index.html">EN</a></div><a class="navbar__cta" href="../../pages/spmb/spmb.html">SPMB</a></div>
+</nav>
+
+<main class="kt-main">
+
+  <!-- ================= HERO ================= -->
+  <section class="kt-hero kt-wrap" id="hero">
+    <div class="kt-hero__media" aria-hidden="true">
+      <img class="kt-hero__img" src="../../assets/images/gambar-sekolah.jpeg" alt="" width="1280" height="720" decoding="async" fetchpriority="high">
+      <span class="kt-hero__shade"></span>
+    </div>
+
+    <div class="kt-hero__content">
+      <h1 class="kt-hero__title kt-reveal is-visible" data-reveal style="--d:1">Hubungi Kami</h1>
+      <p class="kt-hero__desc kt-reveal" data-reveal style="--d:2">
+        Kami selalu terbuka untuk pertanyaan, masukan, dan diskusi. Jangan ragu untuk menghubungi SMANSA Singaraja melalui form di bawah ini atau kanal kontak langsung.
+      </p>
+      <a class="kt-btn kt-btn--gold kt-reveal" data-reveal style="--d:3" href="#kirim-pesan" data-scroll-form>
+        Mari Berdiskusi
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- ================= FORM + INFO ================= -->
+  <section class="kt-contact kt-wrap" id="kontak-utama">
+
+    <div class="kt-card kt-form-card kt-reveal" data-reveal id="kirim-pesan">
+      <h2 class="kt-card__title">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+        Kirim Pesan
+      </h2>
+
+      <form class="kt-form" id="kontakForm" novalidate>
+        <div class="kt-row">
+          <div class="kt-field">
+            <label for="nama">Nama Lengkap</label>
+            <input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda" autocomplete="name" required minlength="3" maxlength="60">
+            <small class="kt-error" data-error-for="nama" aria-live="polite"></small>
+          </div>
+          <div class="kt-field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="email@contoh.com" autocomplete="email" required>
+            <small class="kt-error" data-error-for="email" aria-live="polite"></small>
+          </div>
+        </div>
+
+        <div class="kt-field">
+          <label for="subjek">Subjek</label>
+          <input type="text" id="subjek" name="subjek" placeholder="Perihal pesan Anda" required minlength="3" maxlength="80">
+          <small class="kt-error" data-error-for="subjek" aria-live="polite"></small>
+        </div>
+
+        <div class="kt-field">
+          <label for="pesan">Pesan</label>
+          <textarea id="pesan" name="pesan" rows="5" placeholder="Tulis pesan, saran, atau pertanyaan Anda di sini..." required minlength="10" maxlength="500"></textarea>
+          <div class="kt-field__foot">
+            <small class="kt-error" data-error-for="pesan" aria-live="polite"></small>
+            <small class="kt-counter"><span id="pesanCount">0</span>/500</small>
+          </div>
+        </div>
+
+        <!-- honeypot anti-spam (jangan dihapus) -->
+        <input type="text" name="website" class="kt-hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+        <button class="kt-btn kt-btn--navy" type="submit" id="kirimBtn">
+          <span class="kt-btn__label">Kirim Pesan</span>
+          <svg class="kt-btn__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m22 2-7 20-4-9-9-4 20-7Z"/><path d="M22 2 11 13"/></svg>
+          <span class="kt-btn__spinner" aria-hidden="true"></span>
+        </button>
+      </form>
+    </div>
+
+    <aside class="kt-card kt-info-card kt-reveal" data-reveal style="--d:2" aria-label="Informasi kontak">
+      <h2 class="kt-card__title">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg>
+        Informasi Kontak
+      </h2>
+
+      <ul class="kt-info">
+        <li class="kt-info__item">
+          <span class="kt-info__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
+          <div>
+            <small>Alamat</small>
+            <a href="https://www.google.com/maps?q=SMA+Negeri+1+Singaraja" target="_blank" rel="noopener">Jl. Pramuka No. 1, Banjar Jawa, Kec. Buleleng, Kabupaten Buleleng, Bali 81113</a>
+          </div>
+        </li>
+        <li class="kt-info__item">
+          <span class="kt-info__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3h3l2 5-2.5 1.5a15 15 0 0 0 5 5L16 12l5 2v3a2 2 0 0 1-2 2A16 16 0 0 1 5 5a2 2 0 0 1 2-2Z"/></svg></span>
+          <div>
+            <small>Telepon</small>
+            <a href="tel:+6236222144">(0362) 22144</a>
+          </div>
+        </li>
+        <li class="kt-info__item">
+          <span class="kt-info__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span>
+          <div>
+            <small>Email</small>
+            <a href="mailto:info@sman1singaraja.sch.id">info@sman1singaraja.sch.id</a>
+          </div>
+        </li>
+        <li class="kt-info__item">
+          <span class="kt-info__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+          <div>
+            <small>Jam Operasional</small>
+            <span>Senin - Jumat: 07.00 - 16.00 WITA</span>
+            <span>Sabtu - Minggu: Tutup</span>
+            <em class="kt-status" id="statusBuka" hidden></em>
+          </div>
+        </li>
+      </ul>
+    </aside>
+  </section>
+
+  <!-- ================= SOSIAL MEDIA ================= -->
+  <section class="kt-social kt-wrap kt-reveal" data-reveal id="sosial">
+    <h2 class="kt-social__title">Terhubung Dengan Kami</h2>
+    <div class="kt-social__grid">
+      <a class="kt-social__card kt-reveal" data-reveal style="--d:1" href="https://www.instagram.com/humas_sman_1_singaraja/" target="_blank" rel="noopener" aria-label="Instagram Humas SMAN 1 Singaraja">
+        <span class="kt-social__icon"><img src="../../assets/icon/icon-instagram.webp" alt="" width="36" height="36"></span>
+        <strong>Instagram Humas</strong>
+      </a>
+      <a class="kt-social__card kt-reveal" data-reveal style="--d:2" href="https://www.instagram.com/smansasingaraja/" target="_blank" rel="noopener" aria-label="Instagram Dokumentasi SMAN 1 Singaraja">
+        <span class="kt-social__icon"><img src="../../assets/icon/icon-instagram.webp" alt="" width="36" height="36"></span>
+        <strong>Instagram DOK</strong>
+      </a>
+      <a class="kt-social__card kt-reveal" data-reveal style="--d:3" href="https://www.facebook.com/share/1K67XxnP45/" target="_blank" rel="noopener" aria-label="Facebook SMAN 1 Singaraja">
+        <span class="kt-social__icon"><img src="../../assets/icon/icon-facebook.webp" alt="" width="36" height="36"></span>
+        <strong>Facebook</strong>
+      </a>
+      <a class="kt-social__card kt-reveal" data-reveal style="--d:4" href="https://youtube.com/@dpsosiskamtibsmansasgr5462" target="_blank" rel="noopener" aria-label="YouTube SMAN 1 Singaraja">
+        <span class="kt-social__icon"><img src="../../assets/icon/icon-youtube.webp" alt="" width="36" height="36"></span>
+        <strong>YouTube</strong>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<div data-footer-slot="site-footer"></div>
+
+<button class="kt-fab" id="ktFab" type="button" aria-label="Kembali ke atas">
+  <img src="../../assets/logo/logo40px.png" alt="" width="40" height="40" loading="lazy">
+</button>
+
+<div class="kt-toast" id="ktToast" role="status" aria-live="polite"></div>
+
+<script src="../../komponen/navbar/navbar.js?v=ai-visual-6"></script>
+<script src="../../komponen/kontak/kontak.js" defer></script>
+  <script src="../../komponen/footer/footer.js?v=mobile-footer-1"></script>
+</body>
+</html>
